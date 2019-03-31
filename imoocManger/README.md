@@ -90,5 +90,19 @@ React全家桶 + AntD共享单车 后台管理系统开发
         权限、菜单封装
         日期、金额、手机号封装
         Loading、分页、Mock
+
+    项目特色
+
+        前沿的技术栈
+        健全的架构
+        丰富的UI组件
+        共享单车项目
+
+    项目整体架构
         
+        Mock-server
+        
+        React 16 Router4.0 Redux
+        Axios Map Echarts AntD 
+        菜单 权限 Header Footer……
 ```
