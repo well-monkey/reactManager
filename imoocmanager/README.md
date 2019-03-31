@@ -225,5 +225,32 @@ React全家桶 + AntD共享单车 后台管理系统开发
 
         src/pages/demo/Life.js
         
+```
+
+
+```
+第三章 主页面架构设计
+
+    课程目标介绍
+        第一节:基础插件安装，less文件加载配置
+        第二节:项目主页结构开发
+        第三节:菜单组件开发
+        第四节:头部组建开发
+        第五节:底部组件开发
+
+    3-1 基础插件安装
+
+        安装React-Router、axios
+        安装AntD
+        暴露webpack配置文件
+        安装less-loader
+        修改less-loader
+
+        yarn add react-router-dom   官方从3.0 => 4.0 路由混合使用
+        yarn add axios less-loader
+
+        AntD 基于less开发的 所以需要暴露webpack装置
+        
+
 
 ```

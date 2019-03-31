@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default class Life extends React.Component{
+export default class Child extends React.Component{
     
     constructor(props) {
         super(props);
@@ -27,11 +27,18 @@ export default class Life extends React.Component{
         return true;
     }
 
-    
+    componentWillUpdate(){
+        console.log('well update')
+    }
+
+    componentDidUpdate(){
+        console.log('did update')
+    }
 
 
     render() {
         return<div>
+            <p>这里是子组件 测试子组件的生命周期</p>
             <p>{this.props.name}</p>
         </div>
     }
