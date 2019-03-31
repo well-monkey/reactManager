@@ -238,7 +238,7 @@ React全家桶 + AntD共享单车 后台管理系统开发
         第四节:头部组建开发
         第五节:底部组件开发
 
-    3-1 基础插件安装
+    3-1 3-2 基础插件安装
 
         安装React-Router、axios
         安装AntD
@@ -250,7 +250,56 @@ React全家桶 + AntD共享单车 后台管理系统开发
         yarn add axios less-loader
 
         AntD 基于less开发的 所以需要暴露webpack装置
-        
+        yarn eject
 
+        webpack.config.js 里面增加less配置 安装less less-loader
 
+        yarn add antd 安装支付宝组件
+
+        按照官网提示 引入ant和css
+
+        实现按需加载 babel-plugin-import 
+
+            删掉引入的css
+            yarn add babel-plugin-import --dev
+            文件暴露修改方式
+            options:{
+                plugins:[
+                    ['import',[{
+                        libraryName:'antd',
+                        style:true
+                    }]]
+                ]
+            }
+            yarn add less@2.7.3 版本有问题 具体google
+    
+    3.3 项目主页结构开发
+
+        主页结构定义
+
+            页面结构定义
+            目录结构定义
+            栅格系统使用
+            calc计算方法的使用
+
+        admin.js
+            component 
+                Header
+                Footer
+                NavLeft
+
+                用栅格系统搭建页面
+
+    3.4 calc计算方法的使用
+
+        calc 四则运算 动态计算长度值
+        任何长度值都可以使用calc  
+        calc 函数支持 + - * /
+
+        100vh 屏幕等分  100vh 类似于100%
+        height:calc(100vh)
+
+    3.5 3.6 菜单样式 递归函数
+
+        菜单使用递归函数实现菜单的渲染
 ```
