@@ -1,4 +1,6 @@
+@import './../../style/default.less';
 .header{
+    background:@colorM;
     .header-top{
         height:60px;
         line-height: 60px;
@@ -18,6 +20,13 @@
         }
         .weather{
             text-align: right;
+            font-size: 14px;
+            .date{
+                margin-right: 10px;
+            }
+            .weather-detail{
+                margin-left:5px;
+            }
         }
     }
 }

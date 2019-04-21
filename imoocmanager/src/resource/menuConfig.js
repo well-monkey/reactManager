@@ -18,7 +18,19 @@ const menuList = [
             {
                 title: 'loading',
                 key: '/admin/ui/loading'
+            },
+            {
+                title: '饼图',
+                key: '/admin/charts/pie'  
+            },
+            {
+                title: '折线图',
+                key: '/admin/charts/line'  
             }
         ]
+    },
+    {
+        title: '权限设置',
+        key: '/admin/permission'
     }
 ]

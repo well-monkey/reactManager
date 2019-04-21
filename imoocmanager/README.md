@@ -295,11 +295,33 @@ React全家桶 + AntD共享单车 后台管理系统开发
         calc 四则运算 动态计算长度值
         任何长度值都可以使用calc  
         calc 函数支持 + - * /
-
         100vh 屏幕等分  100vh 类似于100%
         height:calc(100vh)
 
     3.5 3.6 菜单样式 递归函数
 
-        菜单使用递归函数实现菜单的渲染
+        菜单使用递归函数实现菜单的渲染 
+
+        <!-- 菜单渲染 -->
+        componentWillMount() {
+            const menuTreeNode = this.renderMenu(MenuConfig);
+            this.setState({
+                menuTreeNode
+            })
+        }
+
+    3.7 3.8 时间和天气的获取
+
+        时间utils获取    
+        天气是免费的API获取
+        yarn add jsonp --save  安装Jsonp 
+        封装axios/index.js 方法 
+    
+    3.9 底部组件开发
+
+        底部组件布局  
+        Home页面实现 调整css  引入sytle/default.less 控制背景颜色
+        css实现箭头图标
+
+
 ```
