@@ -322,6 +322,64 @@ React全家桶 + AntD共享单车 后台管理系统开发
         底部组件布局  
         Home页面实现 调整css  引入sytle/default.less 控制背景颜色
         css实现箭头图标
+            &:after{
+                position: absolute;
+                content:'';
+                top:39px;
+                left:73px;
+                border-top:9px solid #fff;
+                border-left:12px solid transparent;
+                border-right: 12px solid transparent;
+            }
+```
 
+```
+第4章 Router 4.0路由实战演练
+
+    一、基本概念的介绍
+    二、Demo
+    三、项目路由实战开发
+
+    4.1Router 4.0基本概念的介绍
+
+        react-router 
+        react-router-dom      4.0 基于浏览器的路由    native 基于别的了
+        react-router-dom核心用法
+
+        4.0版本中已经不需要路由配置了，一切皆组件
+        react-router 提供了一些router的核心api 包括Router，Route,Switch 
+        react-router-dom 提供了BrowserRouter,HashRouter,Route,Link,NavLink
+
+        安装
+            npm install react-router-dom -save 
+            yarn add react-router-dom 
+
+
+        BrowserRouter和HashRouter
+
+            http://loaclhost:3000/#/admin/buttons  HashRouter
+            http://loaclhost:3000/admin/buttons    BrowserRouter
+
+        Route:path、exact、component、render
+
+            <Route path='/admin/ui/button' conponents={Buttons} />
+            <Route path='/admin' render={()=>
+                <Admin>
+                    <Route path='/admin/home' compoment={Home}>
+                </Admin>    
+            >
+
+            <Link to="/">Home</Link>
+            <Link to={{pathname:'/three/7'}}>three #7</Link>
+
+            定义
+            <Route path="/three/:number"/> 取值this.props.match.number
+
+        Link,NavLink
+        Switch
+
+    4.2
+    4.3
+    4.4
 
 ```
