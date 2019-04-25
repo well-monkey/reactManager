@@ -378,8 +378,105 @@ React全家桶 + AntD共享单车 后台管理系统开发
         Link,NavLink
         Switch
 
-    4.2
-    4.3
-    4.4
+    4.2 react Router4.0 Demo介绍
+        混合组件化
+            Link、HashRouter Route(自路由)
+        配置化
 
+            pages/router_demo
+
+            import React from 'react';
+            import { HashRouter, Route, Link, Switch } from 'react-router-dom';
+            import Main from './Main'
+            import About from './About'
+            import Topic from './Topic'
+
+            export default class Home extends React.Component{
+                render(){
+                    return(
+                        <HashRouter>
+                            <div>  
+                                <ul>
+                                    <li> 
+                                        <Link to='/'>Home</Link>
+                                    </li>
+                                    <li>
+                                        <Link to='/about'>about</Link>
+                                    </li>
+                                    <li>
+                                        <Link to='/topics'>topics</Link>
+                                    </li>
+                                </ul>
+                                <hr/>
+                                <Switch>
+                                    <Route exact={true} path='/' component={Main}></Route>
+                                    <Route path='/about' component={About}></Route>
+                                    <Route path='/topics' component={Topic}></Route>
+                                </Switch>
+                            
+                            </div>
+                        </HashRouter>
+                    )
+                }
+            }
+            
+    4.3 嵌套路由  路由的两种使用方法  标签代码和路由混合 标签代码和路由分离
+
+        建议新文件route.js
+        export default class IRouter extends React.Component{
+            render(){
+                return(
+                    <Router>
+                        <Home>
+                            <Route path='/home' render={()=>
+                                <Main>
+                                    <div>
+                                        <Route path='/home/a' component={About}></Route>
+                                    </div>
+                                </Main>
+                            }></Route>
+                            <Route path='/about' component={About}></Route>
+                            <Route path='/topics' component={Topic}></Route>
+                        </Home>
+                    </Router>
+                )
+            }
+        }
+
+        home.js
+        export default class Home extends React.Component{
+            render(){
+                return(
+                    <HashRouter>
+                        <div>  
+                            <ul>
+                                <li> 
+                                    <Link to='/home'>Home</Link>
+                                </li>
+                                <li>
+                                    <Link to='/about'>about</Link>
+                                </li>
+                                <li>
+                                    <Link to='/topics'>topics</Link>
+                                </li>
+                            </ul>
+                            <hr/>
+                            {this.props.children}
+                        </div>
+                    </HashRouter>
+                )
+            }
+        }
+    
+    4.4 路由id值 访问不存在的路由匹配404
+
+        {this.props.match.params.id}
+
+        引入NoMatch组件
+        <Route component={NoMatch}></Route>
+
+        组件外面要加Switch 匹配到一个
+        exact是精准匹配
+
+    4.5 React Router路由实战
 ```
