@@ -48,7 +48,6 @@ export default class Header extends React.Component{
         JsonpAxios.jsonp({
             url
         }).then((res)=>{
-            console.log(res[0].now);
             this.setState({
                 temperature: res[0].now.temperature,
                 weather: res[0].now.text
@@ -63,7 +62,7 @@ export default class Header extends React.Component{
                 <Row className="header-top">
                     <Col span={24}>
                         <span>欢迎，{this.state.userName}</span>
-                        <a>退出</a>
+                        <a href="http://www.google.com">退出</a>
                     </Col>
                 </Row>
                 <Row className="breadcrumb">

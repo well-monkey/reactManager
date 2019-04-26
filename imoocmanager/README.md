@@ -478,5 +478,46 @@ React全家桶 + AntD共享单车 后台管理系统开发
         组件外面要加Switch 匹配到一个
         exact是精准匹配
 
-    4.5 React Router路由实战
+    4.5 React Router 项目中运用实战
+
+    export default class IRouter extends React.Component{
+        render(){
+            return(
+                <HashRouter>
+                    <App>
+                        <Route path="/login" component={Login} />
+                        <Route path="/admin" render={()=>
+                            <Admin>
+                                <Route path="/admin/ui/buttons" component={Buttons} />
+                                <Route component={NoMatch} />
+                            </Admin>
+                        } />
+                        <Route path="/order/detail" component={Admin} />
+                    </App>
+                </HashRouter>
+            )
+        }
+    }
+
+```
+
+
+```
+第5章 UI菜单各个组件使用
+
+    5.1 AntD UI组件
+
+        社区活跃 star数多
+
+        Button组件使用
+        Modal组件使用
+        Loading组件使用
+        Notice组件使用
+        Message组件使用
+        Tab组件使用
+        Gallery组件使用
+        Carousel组件使用
+
+        
+
 ```
