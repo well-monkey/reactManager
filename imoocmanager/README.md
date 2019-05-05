@@ -528,7 +528,8 @@ React全家桶 + AntD共享单车 后台管理系统开发
         router.js里面增加 <Switch> 保证匹配路由
 
     5.3 5.4  Modal组件使用
-    5.5 5.6
-
+    5.5      Loading组件使用
+    5.6      Notice组件使用  
+    5.7      Message组件使用 
 
 ```
