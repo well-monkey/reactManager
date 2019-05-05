@@ -531,5 +531,9 @@ React全家桶 + AntD共享单车 后台管理系统开发
     5.5      Loading组件使用
     5.6      Notice组件使用  
     5.7      Message组件使用 
+    5.8 5.9  Tab组件使用
+    5.10     Gallery组件使用
+    
+
 
 ```
