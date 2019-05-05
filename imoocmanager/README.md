@@ -505,7 +505,7 @@ React全家桶 + AntD共享单车 后台管理系统开发
 ```
 第5章 UI菜单各个组件使用
 
-    5.1 AntD UI组件
+    5.1 5.2 AntD UI组件 
 
         社区活跃 star数多
 
@@ -518,6 +518,16 @@ React全家桶 + AntD共享单车 后台管理系统开发
         Gallery组件使用
         Carousel组件使用
 
-        
+        .main{
+            height:calc(100vh);
+            background: @colorL;
+            overflow: auto;
+        }   
+        增加overflow: auto;属性 保证只是右侧内容区域滑动
 
+        router.js里面增加 <Switch> 保证匹配路由
+
+    5.3  Modal组件使用
+
+        
 ```
