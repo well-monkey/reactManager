@@ -15,7 +15,6 @@ import Notice from './pages/ui/notice'
 import Messages from './pages/ui/message'
 import Tabs from './pages/ui/tab'
 import gallery from './pages/ui/gallery'
-import Carousel from './pages/ui/carousel'
 
 import NoMatch from './pages/nomatch'
 
@@ -76,7 +75,7 @@ export default class IRouter extends React.Component {
                 /> <
                 Route path = "/admin/ui/carousel"
                 component = {
-                    Carousel
+                    gallery
                 }
                 /> <
                 Route component = {
