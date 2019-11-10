@@ -21,8 +21,7 @@ import NoMatch from './pages/nomatch'
 
 export default class IRouter extends React.Component {
     render() {
-        return ( <
-            HashRouter >
+        return ( < HashRouter >
             <
             App >
             <
@@ -82,18 +81,14 @@ export default class IRouter extends React.Component {
                 Route component = {
                     NoMatch
                 }
-                /> < /
-                Switch > <
-                /Admin>
+                /> < /Switch > < /Admin>
             }
             /> <
             Route path = "/order/detail"
             component = {
                 Login
             }
-            /> < /
-            App > <
-            /HashRouter>
+            /> < /App > < /HashRouter>
         )
     }
 }

@@ -2,10 +2,10 @@
 
 #### 项目介绍
 
-学习react 项目实践 react 的后台搭建 
-React全家桶 + AntD共享单车 后台管理系统开发
+学习 react 项目实践 react 的后台搭建
+React 全家桶 + AntD 共享单车 后台管理系统开发
 
-运用了Redux+React Router+Node.js全栈开发知识，
+运用了 Redux+React Router+Node.js 全栈开发知识，
 
 一些基本版本支持情况：
 
@@ -18,32 +18,20 @@ React全家桶 + AntD共享单车 后台管理系统开发
 
 <!-- #### 效果展示 -->
 
-
 <!-- ######  <div align="center"> ======注册功能 分为两种身份======</div> -->
-
-
 
 <!-- <div align="center"><img width="375" height="667" src="https://github.com/well-monkey/LearnReact-Redux-Route-node/raw/master/example/static/register.gif"/></div> -->
 <!-- ![image](https://github.com/well-monkey/LearnReact-Redux-Route-node/raw/master/example/static/register.gif) -->
 
-
-
 <!-- ######   <div align="center">====== ======</div> -->
-
 
 <!-- ![image](https://github.com/well-monkey/LearnReact-Redux-Route-node/raw/master/example/static/login.gif) -->
 
-
 <!-- <div align="center"><img width="375" height="667" src="https://github.com/well-monkey/LearnReact-Redux-Route-node/raw/master/example/static/login.gif"/></div> -->
-
-
-
-
-
 
 #### 教程说明
 
- 这里面是一个文件夹  
+这里面是一个文件夹
 
 <!-- 1. 一个是example是react的一些简单的小例子，可以根据官网和本文件进行演练熟悉 react的一些基本的知识 -->
 <!-- 2. 另外一个是一个整体的项目 引入antUI组件 做的一个招聘求职的app 下面是APP文件的使用方式 -->
@@ -57,7 +45,7 @@ React全家桶 + AntD共享单车 后台管理系统开发
 
 #### 学习说明
 
- ======整理不易，star支持一下吧:smile:======   
+======整理不易，star 支持一下吧:smile:======
 
 ```
 第1章 导学
@@ -75,7 +63,7 @@ React全家桶 + AntD共享单车 后台管理系统开发
         Router4.0语法讲解
         Redux集成开发
 
-    React全家桶 AntD UI组件 
+    React全家桶 AntD UI组件
 
         最实用的基础组件
         AntD栅格系统
@@ -100,13 +88,13 @@ React全家桶 + AntD共享单车 后台管理系统开发
         共享单车项目
 
     项目整体架构
-        
+
         Mock-server
 
         React 16 Router4.0 Redux
-        Axios Map Echarts AntD 
+        Axios Map Echarts AntD
         菜单 权限 Header Footer……
-    
+
     课程安排
 
         第一章主要介绍React基础知识
@@ -116,7 +104,7 @@ React全家桶 + AntD共享单车 后台管理系统开发
         第七八章讲解单车业务基本功能开发
         第九章到十三章讲解单车业务核心莫苦熬
         第十四章讲解Redux集成
-    
+
     前置知识
         H5/C3/JS React ES6
 
@@ -127,11 +115,8 @@ React全家桶 + AntD共享单车 后台管理系统开发
         掌握前端图表开发技巧
         掌握基于React的UI框架
         前端后台架构设置及、公共机制的封装、后台管理开发经验
-    
+
 ```
-
-
-
 
 ```
 第二章 React基础知识
@@ -161,11 +146,11 @@ React全家桶 + AntD共享单车 后台管理系统开发
         编程式实现
 
             需要以具体代表表达在哪里(where) 做什么(what) 如何实现(how)
-        
+
         声明式实现
 
             只需要生命在哪里(where) 做什么(what) 无需关心如何实现(how)
-    
+
     2-2 React脚手架、Yarn介绍
 
         结构：
@@ -182,51 +167,50 @@ React全家桶 + AntD共享单车 后台管理系统开发
             cd my-app
             npm start
 
-        什么是Yarn 
+        什么是Yarn
 
             Yarn是新一代包管理工具 (facebook联合巨头一起开发的，认为npm不能满足)
-        
-        为什么使用Yarn   
 
-            速度快       
+        为什么使用Yarn
+
+            速度快
             安装版本统一、更安全    (lock文件 锁定=>统一)
-            更简洁的输出        
+            更简洁的输出
             更好的语义化          （错误提示，语义化提示）
 
-        如何使用Yarn 
+        如何使用Yarn
 
-            yarn init 
+            yarn init
             yarn add                添加
             yarn remove             删除
-            yarn /yarn install 
-            
-        
+            yarn /yarn install
+
+
         npm install create-react-app -g
         npm install yarn -g
-        create-react-app imoocmanager 
-        cd  imoocmanager 
+        create-react-app imoocmanager
+        cd  imoocmanager
         yarn add react-router
 
-        脚手架把webpack隐藏起来了 
+        脚手架把webpack隐藏起来了
         yarn run eject 可以把react的webpack暴露出来
-    
+
     2-3 React生命周期的介绍
 
         getDefaultProps  组件传递
-        getInitialState  
+        getInitialState
         componentWillMount
-        render              初始化后 
-        componentDidMount 
+        render              初始化后
+        componentDidMount
         componentWillReceiveProps
         shouldComponentUpdate 组件更新
         componentWillUpdate
         componentDidUpdate
-        componentWillUnmount 组件销毁   
+        componentWillUnmount 组件销毁
 
         src/pages/demo/Life.js
-        
-```
 
+```
 
 ```
 第三章 主页面架构设计
@@ -258,7 +242,7 @@ React全家桶 + AntD共享单车 后台管理系统开发
 
         按照官网提示 引入ant和css
 
-        实现按需加载 babel-plugin-import 
+        实现按需加载 babel-plugin-import
 
             删掉引入的css
             yarn add babel-plugin-import --dev
@@ -272,7 +256,7 @@ React全家桶 + AntD共享单车 后台管理系统开发
                 ]
             }
             yarn add less@2.7.3 版本有问题 具体google
-    
+
     3.3 项目主页结构开发
 
         主页结构定义
@@ -283,7 +267,7 @@ React全家桶 + AntD共享单车 后台管理系统开发
             calc计算方法的使用
 
         admin.js
-            component 
+            component
                 Header
                 Footer
                 NavLeft
@@ -293,14 +277,14 @@ React全家桶 + AntD共享单车 后台管理系统开发
     3.4 calc计算方法的使用
 
         calc 四则运算 动态计算长度值
-        任何长度值都可以使用calc  
+        任何长度值都可以使用calc
         calc 函数支持 + - * /
         100vh 屏幕等分  100vh 类似于100%
         height:calc(100vh)
 
     3.5 3.6 菜单样式 递归函数
 
-        菜单使用递归函数实现菜单的渲染 
+        菜单使用递归函数实现菜单的渲染
 
         <!-- 菜单渲染 -->
         componentWillMount() {
@@ -312,14 +296,14 @@ React全家桶 + AntD共享单车 后台管理系统开发
 
     3.7 3.8 时间和天气的获取
 
-        时间utils获取    
+        时间utils获取
         天气是免费的API获取
-        yarn add jsonp --save  安装Jsonp 
-        封装axios/index.js 方法 
-    
+        yarn add jsonp --save  安装Jsonp
+        封装axios/index.js 方法
+
     3.9 底部组件开发
 
-        底部组件布局  
+        底部组件布局
         Home页面实现 调整css  引入sytle/default.less 控制背景颜色
         css实现箭头图标
             &:after{
@@ -342,17 +326,17 @@ React全家桶 + AntD共享单车 后台管理系统开发
 
     4.1Router 4.0基本概念的介绍
 
-        react-router 
+        react-router
         react-router-dom      4.0 基于浏览器的路由    native 基于别的了
         react-router-dom核心用法
 
         4.0版本中已经不需要路由配置了，一切皆组件
-        react-router 提供了一些router的核心api 包括Router，Route,Switch 
+        react-router 提供了一些router的核心api 包括Router，Route,Switch
         react-router-dom 提供了BrowserRouter,HashRouter,Route,Link,NavLink
 
         安装
-            npm install react-router-dom -save 
-            yarn add react-router-dom 
+            npm install react-router-dom -save
+            yarn add react-router-dom
 
 
         BrowserRouter和HashRouter
@@ -366,7 +350,7 @@ React全家桶 + AntD共享单车 后台管理系统开发
             <Route path='/admin' render={()=>
                 <Admin>
                     <Route path='/admin/home' compoment={Home}>
-                </Admin>    
+                </Admin>
             >
 
             <Link to="/">Home</Link>
@@ -395,9 +379,9 @@ React全家桶 + AntD共享单车 后台管理系统开发
                 render(){
                     return(
                         <HashRouter>
-                            <div>  
+                            <div>
                                 <ul>
-                                    <li> 
+                                    <li>
                                         <Link to='/'>Home</Link>
                                     </li>
                                     <li>
@@ -413,13 +397,13 @@ React全家桶 + AntD共享单车 后台管理系统开发
                                     <Route path='/about' component={About}></Route>
                                     <Route path='/topics' component={Topic}></Route>
                                 </Switch>
-                            
+
                             </div>
                         </HashRouter>
                     )
                 }
             }
-            
+
     4.3 嵌套路由  路由的两种使用方法  标签代码和路由混合 标签代码和路由分离
 
         建议新文件route.js
@@ -448,9 +432,9 @@ React全家桶 + AntD共享单车 后台管理系统开发
             render(){
                 return(
                     <HashRouter>
-                        <div>  
+                        <div>
                             <ul>
-                                <li> 
+                                <li>
                                     <Link to='/home'>Home</Link>
                                 </li>
                                 <li>
@@ -467,7 +451,7 @@ React全家桶 + AntD共享单车 后台管理系统开发
                 )
             }
         }
-    
+
     4.4 路由id值 访问不存在的路由匹配404
 
         {this.props.match.params.id}
@@ -501,11 +485,10 @@ React全家桶 + AntD共享单车 后台管理系统开发
 
 ```
 
-
 ```
 第5章 UI菜单各个组件使用
 
-    5.1 5.2 AntD UI组件 
+    5.1 5.2 AntD UI组件
 
         社区活跃 star数多
 
@@ -522,18 +505,28 @@ React全家桶 + AntD共享单车 后台管理系统开发
             height:calc(100vh);
             background: @colorL;
             overflow: auto;
-        }   
+        }
         增加overflow: auto;属性 保证只是右侧内容区域滑动
 
         router.js里面增加 <Switch> 保证匹配路由
 
     5.3 5.4  Modal组件使用
     5.5      Loading组件使用
-    5.6      Notice组件使用  
-    5.7      Message组件使用 
+    5.6      Notice组件使用
+    5.7      Message组件使用
     5.8 5.9  Tab组件使用
     5.10     Gallery组件使用
-    
+
+
+
+```
+
+```
+   第五章 表单使用
+
+    课程目标介绍
+    使用Form组件开发登录页面
+    使用Form组件开发注册页面
 
 
 ```
