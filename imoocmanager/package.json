@@ -1,6 +1,6 @@
 {
   "name": "imoocmanager",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@babel/core": "7.2.2",
@@ -125,5 +125,8 @@
   },
   "devDependencies": {
     "babel-plugin-import": "^1.11.0"
+  },
+  "resolutions": {
+    "handlebars": "^4.7.9"
   }
 }
